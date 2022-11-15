@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silhouette</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+</head>
+<body>
+    <div class="start">
+        <img class="title" src="./img/title.png">
+        <img class="preview" src="./img/preview.png">
+        <button class="startButton">
+            <p class="words"><img src="./img/arrow.png" class="arrowHead"> START GAME</p>
+        </button>
+    </div>
+
+    <div class="selection hide">
+        <img class="title" src="./img/title.png">
+        <p class="difficulty">Select difficulty</p>
+        <button class="easyButton">
+            <p class="words">Easy</p>
+        </button>
+        <button class="normalButton">
+            <p class="words">Normal</p>
+        </button>
+        <button class="hardButton">
+            <p class="words">Hard</p>
+        </button>
+    </div>
+
+    <div class="game hide">
+        <div class="popUp hide">
+            <div class="background">
+                <p class="text"></p>
+                <img class="image">
+                <p class="name"></p>
+            </div>
+        </div>
+        <p class="number"></p>
+        <img class="questionImage">
+        <p class="number">What object is this?</p>
+        <div class="options">
+            <button class="btn1"></button>
+            <button class="btn2"></button>
+        </div>
+    </div>
+
+    <div class="final hide">
+        <img class="endImage" src="./img/end.png">
+        <p class="endText">Well done!</p>
+        <button class="againButton">
+            <p class="words"><img src="./img/again.png" class="arrowHead">Play again</p>
+        </button>
+        <button class="homeButton">
+            <p class="words"><img src="./img/home.png" class="arrowHead">Back to home</p>
+        </button>
+    </div>
+
+    <audio id="click" src="sound/click.wav"></audio>
+    <audio id="correct" src="./sound/correct.wav"></audio>
+    <audio id="wrong" src="./sound/wrong.wav"></audio>
+    <audio id="completed" src="./sound/completed.wav"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>
